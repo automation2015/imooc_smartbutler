@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name" translatable="false">智能管家</string>
+    <string name="title_tab1" translatable="false">服务管家</string>
+    <string name="title_tab2" translatable="false">微信精选</string>
+    <string name="title_tab3" translatable="false">美女社区</string>
+    <string name="title_tab4" translatable="false">个人中心</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="smart_manager">智能管家</string>
+    <string name="enter_main">进入主页</string>
+    <string name="skip">跳过</string>
+</resources>

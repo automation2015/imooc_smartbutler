@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="right" >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvToMsgDate"
+        android:layout_gravity="center"
+        android:text="2016-12-10 09:30:06"
+        android:textColor="#f5f5f5"
+        android:background="#bebebe"
+        android:textSize="12sp"/>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+        <TextView 
+            android:id="@+id/tvToMsgInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你好"
+            android:background="@drawable/chatto_bg_normal"
+            android:textSize="18sp"/>
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:src="@drawable/me"/>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="果儿"
+                android:textSize="16sp"/>
+             
+        </LinearLayout>
+        
+    </LinearLayout>
+</LinearLayout>

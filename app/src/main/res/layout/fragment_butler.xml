@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <!-- -->
+    <RelativeLayout
+        android:id="@+id/rlTop"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/black"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="小墨"
+            android:textColor="#ffffff"
+
+            android:textSize="22dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBottom"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/bottom_bar"
+        android:layout_alignParentBottom="true" >
+
+        <EditText
+            android:id="@+id/etInputMsg"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/btnSendMsg"
+            android:background="@drawable/login_edit_normal"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnSendMsg"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="发送"
+            android:layout_centerVertical="true"
+            android:background="@drawable/sendbtnbg"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <ListView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lvMsg"
+        android:layout_below="@id/rlTop"
+        android:layout_above="@id/rlBottom"
+        android:divider="@null"
+        android:dividerHeight="5dp"
+        android:background="@drawable/chat_bg_default"></ListView>
+</RelativeLayout>
