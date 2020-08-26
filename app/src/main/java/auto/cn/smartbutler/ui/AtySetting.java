@@ -59,6 +59,10 @@ public class AtySetting extends Activity {
     TextView tvSettingQuery;
     @Bind(R.id.ll_setting_query)
     LinearLayout llSettingQuery;
+    @Bind(R.id.tv_setting_book)
+    TextView tvSettingBook;
+    @Bind(R.id.ll_setting_book)
+    LinearLayout llSettingBook;
     private String versionName;
     private long versionCode;
     private String url;
@@ -177,7 +181,11 @@ public class AtySetting extends Activity {
         Intent intent = new Intent(AtySetting.this, AtyPhoneQuery.class);
         startActivity(intent);
     }
-
+@OnClick(R.id.ll_setting_book)
+public void bookHome(){
+    Intent intent = new Intent(AtySetting.this, AtyBookHome.class);
+    startActivity(intent);
+}
     //我的位置
     @OnClick(R.id.ll_setting_location)
     public void getLocation() {

@@ -80,7 +80,7 @@
         </activity>
         <activity
             android:name=".ui.AtySetting"
-            android:label="设置页面"></activity>
+            android:label="设置页面" />
         <activity
             android:name=".ui.AtySplash"
             android:label="欢迎页面"
@@ -117,7 +117,8 @@
         <activity
             android:name=".ui.AtyPhoneQuery"
             android:label="归属地查询" />
-        <activity android:name=".ui.AtyWebView"></activity>
+        <activity android:name=".ui.AtyWebView" />
+        <activity android:name=".ui.AtyBookHome"></activity>
     </application>
 
 </manifest>
