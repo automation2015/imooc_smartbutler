@@ -72,11 +72,7 @@
         <activity
             android:name=".ui.MainActivity"
             android:label="主页面">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".ui.AtySetting"
@@ -117,8 +113,20 @@
         <activity
             android:name=".ui.AtyPhoneQuery"
             android:label="归属地查询" />
-        <activity android:name=".ui.AtyWebView" />
-        <activity android:name=".ui.AtyBookHome"></activity>
+        <activity android:name=".ui.AtyWebView"
+            android:label="新闻头条详情"/>
+        <activity android:name=".ui.AtyBookSplash"
+            android:label="小慕书苑欢迎页面"/>
+        <activity android:name=".ui.AtyContact"
+            android:label="联系人列表"/>
+        <activity android:name=".ui.AtyCustom"
+            android:label="自定义Loader">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

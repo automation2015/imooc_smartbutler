@@ -63,6 +63,10 @@ public class AtySetting extends Activity {
     TextView tvSettingBook;
     @Bind(R.id.ll_setting_book)
     LinearLayout llSettingBook;
+    @Bind(R.id.tv_setting_contact)
+    TextView tvSettingContact;
+    @Bind(R.id.ll_setting_contact)
+    LinearLayout llSettingContact;
     private String versionName;
     private long versionCode;
     private String url;
@@ -181,11 +185,21 @@ public class AtySetting extends Activity {
         Intent intent = new Intent(AtySetting.this, AtyPhoneQuery.class);
         startActivity(intent);
     }
-@OnClick(R.id.ll_setting_book)
-public void bookHome(){
-    Intent intent = new Intent(AtySetting.this, AtyBookHome.class);
-    startActivity(intent);
-}
+
+    //读取联系人信息
+    @OnClick(R.id.ll_setting_contact)
+    public void getContact() {
+        Intent intent = new Intent(AtySetting.this, AtyContact.class);
+        startActivity(intent);
+    }
+
+    //小慕书苑
+    @OnClick(R.id.ll_setting_book)
+    public void bookHome() {
+        Intent intent = new Intent(AtySetting.this, AtyBookSplash.class);
+        startActivity(intent);
+    }
+
     //我的位置
     @OnClick(R.id.ll_setting_location)
     public void getLocation() {
